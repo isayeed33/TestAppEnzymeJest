@@ -24,15 +24,7 @@ class Headline extends Component {
 
 Headline.propTypes = {
     header: PropTypes.string,
-    desc: PropTypes.string,
-    // Complex example for working with PropTypes (not used in component)
-    tempArr: PropTypes.arrayOf(PropTypes.shape({
-        fName: PropTypes.string,
-        lName: PropTypes.string,
-        email: PropTypes.string,
-        age: PropTypes.number,
-        onlineStatus: PropTypes.bool
-    }))
+    desc: PropTypes.string
 }
 
 export default Headline;

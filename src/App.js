@@ -7,17 +7,6 @@ import { connect } from 'react-redux';
 import { fetchPosts } from './actions';
 import './app.scss';
 
-/* This const is not used within our app.
-   Although we are passing it to the Headline Component
-   it is only here as an exampleof testing PropTypes */
-const tempArr = [{
-  fName: 'Joe',
-  lName: 'Bloggs',
-  email: 'joebloggs@gmail.com',
-  age: 24,
-  onlineStatus: true
-}];
-
 const initialState = {
   hideBtn: false
 };
@@ -61,7 +50,7 @@ class App extends Component {
       <div className="App" data-test="appComponent">
         <Header />
         <section className="main">
-          <Headline header="Posts" desc="Click the button to render posts!" tempArr={tempArr} />
+          <Headline header="Posts"/>
           
           {!hideBtn &&
             <SharedButton {...configButton} />
